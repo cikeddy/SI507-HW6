@@ -13,7 +13,7 @@
 	console.log("hello in console");
 
 	function displayInformation () {
-		document.querySelector('h1').innerHTML = "A name";
+		document.querySelector('h1').innerHTML = "Cassie Eddy";
 		document.querySelector("#URL").innerHTML = document.documentURI; // URI means something like URL -- slight differences for specificity
 		document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length
 		document.querySelector('#time').innerHTML = new Date();
@@ -27,14 +27,22 @@
 	function copyFunction(){
 		document.querySelector('#cheer').innerHTML += "Go blue!<br>"
 	}
+	
+			function copyFunctionCanada(){
+		document.querySelector('#cheer').innerHTML += "O Canada!<br>"
+	}
 
 	function handleClick(){
 		alert("hello");
 	}
+	
+	function handleClickEq(){
+		alert("March 20, 2019");
+	}
 </script>
 <style>
 p{
-	background-color: #b3b3b3;
+	background-color: #002366;
 	border: 3px solid #FFFFFF;
 	padding: 3%;
 	font-size: 1.1em;
@@ -62,7 +70,7 @@ p{
 	<ul>
 		<li>Kent State</li>
 		<li>University of Pittsburgh</li>
-		<li>McGill University</li>
+		<li oncopy="copyFunctionCanada()">McGill University</li>
 		<li>California State University Long Beach</li>
 		<li oncopy="copyFunction()">University of Michigan</li>
 	</ul>
@@ -71,6 +79,7 @@ p{
 	</div>
 
 	<button onclick=handleClick() id="wow-button">Wow</button>
+	<button onclick=handleClickEq() id="eq-button">Spring Equinox 2019 </button>
 
 </body>
 </html>

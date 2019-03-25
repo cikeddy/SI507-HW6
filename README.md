@@ -96,18 +96,25 @@ The console and alert functions are similar to print in Python. Alert pops up on
 You would need to remove the alert code (line 12 in the original file). 
 
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
+I can change line 16 of the code (where the h1 is being selected and the innerHTML is being changed) to my own name. 
 
 * **What does the word `document` represent in this code? Explain briefly.**
+Document represents the page (HTML) that the JavaScript is referring to. 
 
 * **What is happening in line 12 ( 
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
 
+The element with the id items is being selected and the innerHTML is being changed to the length of all list (li) elements on the page (the number of list items).
+
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
+The background color of the page would be  white with gray elements (#b3b3b3).
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
+This is because of the border and background of the paragraphs are set to white and gray, respectively, in the syle tag (CSS). This can be edited by using a new color for the paragraph border attribute, which can be done in JavaScript or the CSS clode in the style tag.
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
+I created a new function called copyFunctionCanada to add "O Canada" to the innerHTML of the element with id cheer. I figured out what to do by looking at the copyFunction. 
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
@@ -122,7 +129,7 @@ function handleClick(){
 <button onclick=handleClick() id="wow-button">Wow</button>
 ```
 
-
+The button calls the function handleClick when clicked on and the function creates an alert with "hello" written in it (which causes a text box to pop up).
 
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
 
