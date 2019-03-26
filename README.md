@@ -56,14 +56,11 @@ Below are a bunch of questions and indications of things to do. For each indicat
 	* Slightly more than half the 1000 points will come from answering the questions. The rest will come from your edits to the code.
 
 ### Names of people you have worked with on this assignment
-* List everyone's names and uniqnames who have worked on this assignment with you, **including your own name, but make sure YOUR name is first and bold**
-* Like this: 
-* **Jackie Cohen (jczetta)**
-* Yea-Ree Chang (cyearee)
-* Ruchi Ookalkar (ruchido)
-* Innocent Obi (innoobi)
-* Zhen Wang (alejwang)
-* etc.
+* **Cassie Eddy(cikeddy)**
+* Salma Siddiqui (salmasid)
+* Shannon Weber (webersh)
+* Radhika Sondhi (rsondhi)
+* Kim Vuong (kvuong)
 
 ## Questions & code instructions
 
