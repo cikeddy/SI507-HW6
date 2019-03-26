@@ -140,12 +140,16 @@ The button calls the function handleClick when clicked on and the function creat
 * **Check out the file `jquerylib_submit_example.html`. This is an example of code that uses a package called `jQuery` (and this will need you to have an internet connection to run it properly, although the other file does not). Check out resources above for more on jQuery!**
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
+This is because the jQuery sets the class to error when an invalid entry is made and the file contains CSS which makes the text of class error the color red. The same is true for valid inputs which are set to the class good and given a color of blue in the CSS. 
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
+I googled the line and found that it is creating a regular expression that helps determine if the input consists only of characters 
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
+Spacing does not matter in JavaScript, whereas spacing/indentation does matter in Python.
 
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
+1000 refers to the speed at which the element fades out. 
 
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
 
@@ -153,7 +157,7 @@ The button calls the function handleClick when clicked on and the function creat
 $(document).ready(function(){
     $("form").submit(function(event){
 ```
-
+This code is checking if the document had loaded before executing the jQuery code.
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.
